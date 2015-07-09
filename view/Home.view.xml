@@ -1,0 +1,10 @@
+<mvc:View controllerName="sap.training.navigation.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Page title="{i18n>homePageTitle}" class="sapUiResponsiveContentPadding">
+		<content>
+		    <Button id="idDisplayNotFoundtBtn" text="{i18n>homeButtonText}" press="onDisplayNotFound" class="sapUiTinyMarginEnd"/>
+		    <Button id="idProductListBtn" text="{i18n>homeProductsButtonText}" press="onNavToProducts" class="sapUiTinyMarginEnd"/>
+		    <Button id="idProductOverviewBtn" text="Show Products Overview" press="onNavToProductsOverview" class="sapUiTinyMarginEnd"/>
+		</content>
+	</Page>
+</mvc:View>

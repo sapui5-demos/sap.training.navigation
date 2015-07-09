@@ -1,0 +1,11 @@
+<mvc:View controllerName="sap.training.navigation.controller.products.overview.ProductsOverview" xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page class="sapUiResponsiveContentPadding" navButtonPress="onNavBack" showNavButton="true" title="Products Overview">
+		<content>
+			<l:VerticalLayout class="sapUiSmallMargin">
+				<l:HorizontalLayout class="sapUiMediumMarginBottom" id="idProductsOverviewTopHL"/>
+				<l:HorizontalLayout id="idProductsOverviewContentHL"/>
+			</l:VerticalLayout>
+		</content>
+	</Page>
+</mvc:View>

@@ -1,0 +1,30 @@
+<mvc:View busyIndicatorDelay="0" controllerName="sap.training.navigation.controller.products.Product" xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page class="sapUiResponsiveContentPadding" id="productPage" navButtonPress="onNavBack" showNavButton="true"
+		title="Product Details of {product>Name}">
+		<content>
+			<Panel class="sapUiResponsiveMargin sapUiNoContentPadding" id="productPanel" width="auto">
+				<headerToolbar>
+					<Toolbar>
+						<Title level="H2" text="Product ID: {product>ID}"/>
+						<ToolbarSpacer/>
+						<Link text="Flip to Supplier" tooltip="See the supplier of this product" press="onShowSupplier"  />
+					</Toolbar>
+				</headerToolbar>
+				<content>
+					<f:SimpleForm columnsL="1" columnsM="1" editable="false" emptySpanL="4" emptySpanM="4" labelSpanL="3" labelSpanM="3" layout="ResponsiveGridLayout"
+						maxContainerCols="2" minWidth="1024">
+						<f:content>
+							<Label text="Description"/>
+							<Text text="{product>Description}"/>
+							<Label text="Price"/>
+							<Text text="{product>Price}"/>
+							<Label text="Rating"/>
+							<RatingIndicator enabled="false" value="{product>Rating}"/>
+						</f:content>
+					</f:SimpleForm>
+				</content>
+			</Panel>
+		</content>
+	</Page>
+</mvc:View>

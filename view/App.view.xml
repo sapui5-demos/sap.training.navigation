@@ -1,0 +1,9 @@
+<mvc:View controllerName="sap.training.navigation.controller.App"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns="sap.m"
+        displayBlock="true" 
+	    xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<App id="app"/>
+	
+</mvc:View>

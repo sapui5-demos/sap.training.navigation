@@ -1,0 +1,4 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Text
+		text="This text comes from the target productsOverviewTop (view = sap.training.navigation.view.products.overview.ProductsOverviewTop)."/>
+</mvc:View>

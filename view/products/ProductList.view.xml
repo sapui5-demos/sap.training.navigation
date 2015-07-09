@@ -1,0 +1,23 @@
+<mvc:View
+   controllerName="sap.training.navigation.controller.products.ProductList"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Page id="idProductListPage" title="{i18n>productListPageTitle}"
+      showNavButton="true"
+      navButtonPress="onNavBack"
+      class="sapUiResponsiveContentPadding">
+      <content>
+         <List id="idProductList" headerText="{i18n>productListHeader}" items="{product>/Products}">
+            <items>
+               <StandardListItem
+                  title="{product>Name} {product>Description}"
+                  iconDensityAware="false"
+                  iconInset="false"
+                  type="Navigation"
+                  press="onListItemPressed"/>
+            </items>
+         </List>
+
+      </content>
+   </Page>
+</mvc:View>

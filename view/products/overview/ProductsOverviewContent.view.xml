@@ -1,0 +1,37 @@
+<mvc:View
+   controllerName="sap.training.navigation.controller.products.overview.ProductsOverviewContent"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+
+   <Table id="idProductsTable"
+         items="{product>/Products}"
+         itemPress="onItemPressed">
+      <headerToolbar>
+         <Toolbar>
+            <Title text="Products" level="H2"/>
+            <ToolbarSpacer></ToolbarSpacer>
+            <SearchField id="idSearchField" search="onSearchProductsTable" width="50%"/>
+            <Button icon="sap-icon://sort" press="onSortButtonPressed" />
+         </Toolbar>
+      </headerToolbar>
+      <columns>
+         <Column id="productIDCol"><Text text="Product ID"/></Column>
+         <Column id="nameCol"><Text text="Name"/></Column>
+         <Column id="descriptionCol"><Text text="Description"/></Column>
+         <Column id="ratingCol"><Text text="Rating"/></Column>
+         <Column id="priceCol"><Text text="Price"/></Column>
+      </columns>
+      <items>
+         <ColumnListItem type="Active">
+            <cells>
+               <Text text="{product>ID}"/>
+               <Text text="{product>Name}"/>
+               <Text text="{product>Description}"/>
+               	<RatingIndicator enabled="false" value="{product>Rating}"/>
+               <Text text="{product>Price}"/>
+            </cells>
+         </ColumnListItem>
+      </items>
+   </Table>
+
+</mvc:View>

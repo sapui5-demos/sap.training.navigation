@@ -1,0 +1,17 @@
+<mvc:View xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<f:SimpleForm columnsL="1" columnsM="1" editable="false" emptySpanL="4" emptySpanM="4" labelSpanL="3" labelSpanM="3" layout="ResponsiveGridLayout"
+		maxContainerCols="2" minWidth="1024">
+		<f:content>
+			<Label text="Street"/>
+			<Text text="{product>Address/Street}"/>
+			<Label text="City"/>
+			<Text text="{product>Address/City}"/>
+			<Label text="ZipCode"/>
+			<Text text="{product>Address/Zip Code}"/>
+			<Label text="State"/>
+			<Text text="{product>Address/State}"/>
+			<Label text="Country"/>
+			<Text text="{product>Address/Country}"/>
+		</f:content>
+	</f:SimpleForm>
+</mvc:View>
